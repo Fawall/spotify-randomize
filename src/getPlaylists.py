@@ -1,10 +1,7 @@
 from connection import *
-import os
 import json
-from spotipy.oauth2 import SpotifyClientCredentials
-import spotipy
 from dotenv import load_dotenv
-import asyncio
+
 
 def getPlaylist(spotify_id):
     d = []
