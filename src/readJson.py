@@ -1,14 +1,12 @@
 import json
 
-def readJson(file):
-    with open(file, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
+def createJson(file):
+    data = json.loads(file)
     return data
 
 
 def getPlaylistUsers(file):
-    
+       
     users = set()
 
     for d in file:
@@ -31,10 +29,10 @@ def organizeJSON(file):
     j = 0
     i = 0
     tracks = list(file.items())
-
     first_values = []
 
     for i in range(len(tracks[0][1])):
+         
         for users, sublist in tracks:
             first_values.append(sublist[i]) 
 
