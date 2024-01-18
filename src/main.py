@@ -16,5 +16,8 @@ new_json = organizeJSON(new_json)
 
 createJSON = json.dumps(new_json)
 
+if not os.path.exists("json"):
+    os.makedirs("json")
+
 with open("json/output.json", "w", encoding="UTF-8") as fp:
     fp.write(createJSON)
