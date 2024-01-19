@@ -25,7 +25,7 @@ def create_playlist_connection():
             
             client_id=os.getenv("CLIENT_ID"),
             client_secret=os.getenv("CLIENT_SECRET"),
-            redirect_uri="https://google.com"    
+            redirect_uri="http://127.0.0.1:8000/callback"    
         )
     )
     return sp
