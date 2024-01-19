@@ -21,7 +21,7 @@ def set_tracksInJSON(user,file):
     for track in file:       
         
         if "added_by" in track and track["added_by"] in usersPlaylist:
-            usersPlaylist[track["added_by"]].append(track["track_name"])
+            usersPlaylist[track["added_by"]].append(track["track_id"])
 
     return usersPlaylist
 
@@ -34,6 +34,7 @@ def organizeJSON(file):
     for i in range(len(tracks[0][1])):
          
         for users, sublist in tracks:
+            
             first_values.append(sublist[i]) 
 
     return first_values
