@@ -1,4 +1,4 @@
-from connection import *
+from connections import *
 import json
 from dotenv import load_dotenv
 
