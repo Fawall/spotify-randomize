@@ -6,7 +6,9 @@ from getPlaylists import getPlaylist
 from CreateNewPlaylist import *
 from readJson import *
 
-data = getPlaylist(os.getenv("SPOTIFY_PLAYLIST"))
+playlist_id = input("Insira o id da playlist que deseja randomizar: ")
+
+data = getPlaylist(playlist_id)
 
 jsonFile = createJson(data)
 
