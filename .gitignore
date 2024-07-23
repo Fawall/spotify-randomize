@@ -1,5 +1,5 @@
 .cache
-.env
+mysettings.env
 __pycache__
 json
 .json

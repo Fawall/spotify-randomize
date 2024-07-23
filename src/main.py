@@ -6,7 +6,7 @@ from getPlaylists import getPlaylist
 from CreateNewPlaylist import *
 from readJson import *
 
-data = getPlaylist(os.getenv("SPOTIFY_TESTE"))
+data = getPlaylist(os.getenv("SPOTIFY_PLAYLIST"))
 
 jsonFile = createJson(data)
 
